@@ -1,4 +1,5 @@
 "use client"
+
 export default function Page() {
 
   return (
@@ -10,7 +11,7 @@ export default function Page() {
       <p className=" dark:text-color-font-secundaria text-color-black/90 pb-20 font-normal text-base leading-6">Sometimes I write articles covering various topics in the field of technology on <a className=" underline underline-offset-4 hover:text-color-black/80 dark:hover:text-color-font-secundaria/60" href="https://dev.to/joao31oliveira">dev.to</a>.</p>
     </div>
     <div>
-      <h2 className="dark:text-white text-color-black text-base font-bold">writing</h2>
+      <h2 className="dark:text-white pb-5 text-color-black text-base font-bold">writing</h2>
     </div>
   </div>
   );
