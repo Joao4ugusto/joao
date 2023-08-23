@@ -11,13 +11,6 @@ const space = Space_Grotesk({
   subsets: ['latin'] })
   
 
-
-export const metadata = {
-  title: 'João Augusto',
-  description: 'Meu portfólio pessoal',
-}
-
-
 export default function RootLayout({
   children,
 }: {
