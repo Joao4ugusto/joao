@@ -75,9 +75,9 @@ export default function RootLayout({
       <header className={` top-0 py-6 px-6 md:px-36 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full bg-white dark:bg-color-black/95`}>
       <Image src={fundo1} alt='' layout="fill" objectFit="cover" className={` absolute z-[-1] top-0  w-screen h-screen object-cover ${tema ? " opacity-5" : " opacity-80 "} `} /> 
     <div className=" flex justify-between items-center">
-    <div onClick={openMenu} className=" sy:hidden" >
+    <button onClick={openMenu} className=" sy:hidden w-5 h-5 " >
       <TextAlignLeftIcon width={19} className=' text-black dark:text-white' />
-    </div>
+    </button>
     <div className="  gap-1 md:hidden sy:flex">
     <div className="gap-1 md:hidden sy:flex">
         <a
@@ -143,11 +143,11 @@ export default function RootLayout({
     </div>
 
     </div>
-    <a href='#' className=" cursor-pointer  sy:flex sy:p-3 dark:sy:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded inline-block">
+    <div className=" cursor-pointer  sy:flex sy:p-3 dark:sy:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded inline-block">
     <div className="transform-gpu ">
     <AvatarIcon width={18} className=' text-black dark:text-white' />
     </div>
-   </a>
+   </div>
     </div>
     </header> 
     <div className=' z-50'>

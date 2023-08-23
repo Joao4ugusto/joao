@@ -32,7 +32,7 @@ export default function Sidebar({ open, onClose }: props) {
   };
 
   return (
-    <aside onClick={onClose} className={` sy:hidden fixed backdrop-blur-sm backdrop-brightness-90 top-0 left-0 ${open ? "w-full h-full ":"-ml-96"} `}>
+    <aside onClick={onClose} className={` sy:hidden fixed backdrop-blur-sm  top-0 left-0 ${open ? "w-full h-full ":"-ml-96"} `}>
       <div className={` h-full  bg-white dark:bg-black transition-all duration-500  py-6 px-5 ${open ? "w-[80%] md:w-[40%] sm:w-[70%]" : " -ml-96"} `}>
         <div onClick={onClose} className=" px-2 pb-16">
           <Cross1Icon width={18} className=' text-black dark:text-white' />
