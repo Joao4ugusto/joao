@@ -150,7 +150,7 @@ export default function RootLayout({
    </div>
     </div>
     </header> 
-    <div className='transform-gpu z-50'>
+    <div className='z-50'>
     <Sidebar open={menuOpened} onClose={closeMenu} />
     </div>  
       </body>
