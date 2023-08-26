@@ -71,13 +71,13 @@ export default function RootLayout({
   return (
     <html lang="" className={space.className}>
       <body className={` ${tema ? " bg-white": "bg-color-black"} `}>{children}
-      <Image src={fundo1} alt='' className={` absolute z-[-1] top-0 w-full h-[1000px] left-0 object-cover ${tema ? " opacity-5" : " opacity-80 "} `} />  
-      <header className={` top-0 py-6 px-6 md:px-36 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full bg-white dark:bg-color-black/95`}>
-      <Image src={fundo1} alt='' layout="fill" objectFit="cover" className={` absolute z-[-1] top-0  w-screen h-screen object-cover ${tema ? " opacity-5" : " opacity-80 "} `} /> 
+      <Image src={fundo1} alt='' className={` absolute z-[-1] top-0 w-full h-[1000px] left-0 object-cover ${tema ? " hidden" : " opacity-80 "} `} />  
+      <header className={` top-0 py-4 px-4 md:px-[92px] mf:px-28 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full bg-white dark:bg-color-black/95`}>
+      <Image src={fundo1} alt='' layout="fill" objectFit="cover" className={` absolute z-[-1] top-0  w-screen h-screen object-cover ${tema ? " hidden " : " opacity-80 "} `} /> 
     <div className=" flex justify-between items-center">
-    <button onClick={openMenu} className=" sy:hidden w-5 h-5 " >
-      <TextAlignLeftIcon width={19} className=' text-black dark:text-white' />
-    </button>
+    <a onClick={openMenu} className=" focus:outline-none sy:hidden py-2 px-1 " >
+      <TextAlignLeftIcon width={18} height={18} className=' text-black dark:text-white' />
+    </a>
     <div className="  gap-1 md:hidden sy:flex">
     <div className="gap-1 md:hidden sy:flex">
         <a
@@ -143,9 +143,9 @@ export default function RootLayout({
     </div>
 
     </div>
-    <div className=" cursor-pointer  sy:flex sy:p-3 dark:sy:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded inline-block">
-    <div className="transform-gpu ">
-    <AvatarIcon width={18} className=' text-black dark:text-white' />
+    <div className=" cursor-pointer sy:flex sy:p-3 dark:sy:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded inline-block">
+    <div className="transform-gpu focus:outline-none ">
+    <AvatarIcon width={16} height={16}  className=' focus:outline-none text-black dark:text-white ' />
     </div>
    </div>
     </div>
