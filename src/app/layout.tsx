@@ -72,10 +72,10 @@ export default function RootLayout({
     <html lang="" className={space.className}>
       <body className={` ${tema ? " bg-white": "bg-color-black"} `}>{children}
       <Image src={fundo1} alt='' className={` absolute z-[-1] top-0 w-full h-[1000px] left-0 object-cover ${tema ? " hidden" : " opacity-80 "} `} />  
-      <header className={` top-0 py-4 px-4 md:px-[92px] mf:px-28 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full bg-white dark:bg-color-black/95`}>
+      <header className={` top-0 py-4 px-6 md:px-[92px] mf:px-28 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full bg-white dark:bg-color-black/95`}>
       <Image src={fundo1} alt='' layout="fill" objectFit="cover" className={` absolute z-[-1] top-0  w-screen h-screen object-cover ${tema ? " hidden " : " opacity-80 "} `} /> 
     <div className=" flex justify-between items-center">
-    <a onClick={openMenu} className=" focus:outline-none sy:hidden py-2 px-1 " >
+    <a onClick={openMenu} className=" focus:outline-none sy:hidden " >
       <TextAlignLeftIcon width={18} height={18} className=' text-black dark:text-white' />
     </a>
     <div className="  gap-1 md:hidden sy:flex">
@@ -150,7 +150,7 @@ export default function RootLayout({
    </div>
     </div>
     </header> 
-    <div className=' z-50'>
+    <div className='z-50'>
     <Sidebar open={menuOpened} onClose={closeMenu} />
     </div>  
       </body>

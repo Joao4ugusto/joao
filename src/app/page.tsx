@@ -3,7 +3,7 @@
 export default function Page() {
 
   return (
-    <div className=" px-6 py-28 md:px-[100px] mf:px-[120px] sy:px-[140px] lg:px-40 lg:py-40 xl:px-[320px] 2xl:py-40 2xl:px-[410px]">
+    <div className=" px-6 py-28 md:px-[95px] mf:px-[118px] sy:px-[142px] lg:px-40 lg:py-40 xl:px-[323px] 2xl:py-40 2xl:px-[410px]">
     <div>
       <h1 className="dark:text-white text-color-black pb-8 text-base font-bold">João Augusto</h1>
       <p className=" dark:text-color-font-secundaria text-color-black/90  pb-10 font-normal text-base leading-6">I m a Brazilian software engineer, in addition to being a computer science student. My main area of ​​focus is static software development, with an emphasis on creating compelling and scalable solutions.</p>
