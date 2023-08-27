@@ -42,7 +42,7 @@ export default function Sidebar({ open, onClose }: props) {
         <div className="">
   <div className="pb-1">
     <a
-      href="#"
+      href="/"
       onClick={Bot1}
       className={`block px-2 py-3 ${
         Botao1
@@ -60,7 +60,7 @@ export default function Sidebar({ open, onClose }: props) {
   </div>
   <div className="pb-1">
     <a
-      href="#"
+      href="/blog"
       onClick={Bot2}
       className={`block p-2 py-3 ${
         Botao2
@@ -78,7 +78,7 @@ export default function Sidebar({ open, onClose }: props) {
   </div>
   <div className="pb-1">
     <a
-      href="#"
+      href="/codes"
       onClick={Bot3}
       className={`block px-2 py-3 ${
         Botao3
