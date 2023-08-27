@@ -70,7 +70,7 @@ export default function RootLayout({
   // ********************
 
   const header = (
-    <header className={` top-0 py-6 px-6 md:px-[92px] mf:px-28 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full ${tema ? " bg-white bg-[url('../../public/fundo2.svg')]" : "bg-color-black bg-[url('../../public/fundo.svg')]"}`}>
+    <header className={` top-0 py-6 px-6 md:px-[92px] mf:px-28 sy:px-32 lg:px-36 lg:py-4 xl:px-[310px] xl:py-4 2xl:px-[400px] 2xl:py-4 fixed w-full ${tema ? " bg-white bg-[url('../../public/fundo3.svg')] sy:bg-[url('../../public/fundo2.svg')]" : "bg-color-black bg-[url('../../public/fundo.svg')]"}`}>
       <div className=" flex justify-between items-center">
         <a onClick={openMenu} className=" focus:outline-none sy:hidden " >
           <TextAlignLeftIcon width={18} height={18} className=' text-black dark:text-white' />
@@ -149,7 +149,7 @@ export default function RootLayout({
 
   return (
     <html lang="" className={space.className}>
-      <body className={`${tema ? " bg-white bg-[url('../../public/fundo2.svg')]" : "bg-color-black bg-[url('../../public/fundo.svg')]"} `}>{children}
+      <body className={`${tema ? " bg-white bg-[url('../../public/fundo3.svg')] sy:bg-[url('../../public/fundo2.svg')]" : "bg-color-black bg-[url('../../public/fundo.svg')]"} `}>{children}
         {header}
         <div className='z-50'>
           <Sidebar open={menuOpened} onClose={closeMenu} />
