@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { Cross1Icon, HomeIcon, FileTextIcon, CodeIcon, GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
+import Link from "next/link";
 
 type props = {
   open: boolean;
@@ -41,7 +42,7 @@ export default function Sidebar({ open, onClose }: props) {
         
         <div className="">
   <div className="pb-1">
-    <a
+    <Link
       href="/"
       onClick={Bot1}
       className={`block px-2 py-3 ${
@@ -56,10 +57,10 @@ export default function Sidebar({ open, onClose }: props) {
           <p className="text-black dark:text-white">Home</p>
         </div>
       </div>
-    </a>
+    </Link>
   </div>
   <div className="pb-1">
-    <a
+    <Link
       href="/blog"
       onClick={Bot2}
       className={`block p-2 py-3 ${
@@ -74,10 +75,10 @@ export default function Sidebar({ open, onClose }: props) {
           <p className="text-black dark:text-white">written</p>
         </div>
       </div>
-    </a>
+    </Link>
   </div>
   <div className="pb-1">
-    <a
+    <Link
       href="/codes"
       onClick={Bot3}
       className={`block px-2 py-3 ${
@@ -92,7 +93,7 @@ export default function Sidebar({ open, onClose }: props) {
           <p className="text-black dark:text-white">Studies</p>
         </div>
       </div>
-    </a>
+    </Link>
   </div>
 </div> 
     <h2 className=" py-5 px-2 pb-8 dark:text-color-font-principal text-color-black text-base font-semibold">Social</h2>
