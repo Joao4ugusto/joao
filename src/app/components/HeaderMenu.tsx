@@ -19,7 +19,7 @@ export default function HeaderMenu({
   on2,
 }: Props){
   
-  const [botao1, setBotao1] = useState(false);
+  const [botao1, setBotao1] = useState(true);
   const [botao2, setBotao2] = useState(false);
   const [botao3, setBotao3] = useState(false);
 
@@ -100,11 +100,11 @@ export default function HeaderMenu({
           </a>
           <p className=" hidden md:flex p-2 text-color-font-secundaria">|</p>
 
-          <div className=" flex dark:bg-white/5 bg-black/5 rounded">
-            <button onClick={on1} className={`flex p-3 ${tema ? 'dark:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  bg-gradient-to-r from-green-200/60 via-green-300/60 to-blue-500/60 rounded' : ' bg-none'} `}>
+          <div className=" hidden sy:flex dark:sy:bg-white/5 sy:bg-black/5 rounded">
+            <button onClick={on1} className={`sy:flex sy:p-3 ${tema ? 'dark:sy:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:bg-gradient-to-r from-green-200/60 via-green-300/60 to-blue-500/60 rounded' : ' bg-none'} `}>
               <SunIcon width={18} className=' text-black dark:text-white' />
             </button>
-            <button onClick={on2} className={`flex p-3 ${tema2 ? 'dark:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  bg-gradient-to-r from-green-200/60 via-green-300/60 to-blue-500/60 rounded' : ' bg-none'} `}>
+            <button onClick={on2} className={`sy:flex sy:p-3 ${tema2 ? 'dark:sy:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:bg-gradient-to-r from-green-200/60 via-green-300/60 to-blue-500/60 rounded' : ' bg-none'} `}>
               <MoonIcon name='MoonIcon' width={18} className=' text-black dark:text-white' />
             </button>
           </div>

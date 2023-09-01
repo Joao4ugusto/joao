@@ -1,8 +1,9 @@
 ---
-title: "Using AI to generate poetry"
-subtitle: "I used GPT-3 to generate poetry and other creative content."
-date: "2021-08-27"
+title: "Getting Started with AWS"
+subtitle: "Create an AWS account and set up CLI/SDK access.🔥⚡"
+date: "2020-12-27"
 ---
+
 # Evolving in TypeScript! 📘🐈‍⬛
 
 ## Banner

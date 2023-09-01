@@ -1,8 +1,9 @@
 ---
-title: "Using AI to generate poetry"
-subtitle: "I used GPT-3 to generate poetry and other creative content."
-date: "2021-08-27"
+title: "Evolving-in-TypeScript"
+subtitle: "📘🐈‍⬛ - Exploring the Official TypeScript Documentation!"
+date: "2023-08-31"
 ---
+
 # Evolving in TypeScript! 📘🐈‍⬛
 
 ## Banner
