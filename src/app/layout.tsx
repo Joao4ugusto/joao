@@ -49,9 +49,9 @@ const closeSidebar = () => setSidebarOpened(false);
 
  
   return (
-    <html lang="" className={space.className}>
+    <html lang="pt-br" className={space.className}>
       <body
-        className={` ${tema? "bg-white bg-[url('../../public/fundo3.svg')]": "bg-color-black bg-[url('../../public/fundo.svg')]"} `}
+        className={` ${tema? "bg-white ": "bg-color-black "} `}
       >
         <HeaderMenu  openSidebarClick={openSidebar} tema={tema}
         tema2={tema2}

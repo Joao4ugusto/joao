@@ -33,8 +33,8 @@ export default function Sidebar({ open, onClose }: props) {
   };
 
   return (
-    <aside onClick={onClose} className={` sy:hidden fixed backdrop-blur-sm  top-0 left-0 ${open ? "w-full h-full ":"-ml-96"} `}>
-      <div className={` h-full  bg-white dark:bg-black transition-all duration-500  py-6 px-5 ${open ? "w-[80%] md:w-[40%] sm:w-[70%]" : " -ml-96"} `}>
+    <aside onClick={onClose} className={`  fixed backdrop-blur-sm  top-0 left-0 ${open ? "w-full h-full ":"-ml-96"} `}>
+      <div className={` h-full bg-white 2xl:bg-gray-100/60  dark:bg-black 2xl:dark:bg-black/30 transition-all duration-500  py-6 px-5 ${open ? "w-[80%] md:w-[40%] sm:w-[70%] 2xl:w-[20%]" : " -ml-96"} `}>
         <div onClick={onClose} className=" px-2 pb-16">
           <Cross1Icon width={18} className=' text-black dark:text-white' />
         </div>
@@ -47,8 +47,8 @@ export default function Sidebar({ open, onClose }: props) {
       onClick={Bot1}
       className={`block px-2 py-3 ${
         Botao1
-          ? "bg-gradient-to-r from-green-200/80 via-green-300/80 to-blue-500/80 rounded-lg dark:bg-gradient-to-r dark:from-green-200/20 dark:via-green-300/20 dark:to-blue-500/20"
-          : "dark:bg-transparent bg-transparent"
+          ? "hover:bg-black/5 rounded hover:dark:bg-white/5"
+          : "hover:bg-black/5 rounded hover:dark:bg-white/5"
       }`}
     >
       <div className="transform-gpu flex items-center gap-5">
@@ -65,8 +65,8 @@ export default function Sidebar({ open, onClose }: props) {
       onClick={Bot2}
       className={`block p-2 py-3 ${
         Botao2
-          ? "bg-gradient-to-r from-green-200/80 via-green-300/80 to-blue-500/80 rounded-lg dark:bg-gradient-to-r dark:from-green-200/20 dark:via-green-300/20 dark:to-blue-500/20"
-          : "dark:bg-transparent bg-transparent"
+          ? " hover:bg-black/5 rounded hover:dark:bg-white/5"
+          : "hover:bg-black/5 rounded hover:dark:bg-white/5"
       }`}
     >
       <div className="transform-gpu flex items-center gap-5">
@@ -83,8 +83,8 @@ export default function Sidebar({ open, onClose }: props) {
       onClick={Bot3}
       className={`block px-2 py-3 ${
         Botao3
-          ? "bg-gradient-to-r from-green-200/80 via-green-300/80 to-blue-500/80 rounded-lg dark:bg-gradient-to-r dark:from-green-200/20 dark:via-green-300/20 dark:to-blue-500/20"
-          : "dark:bg-transparent bg-transparent"
+          ? " hover:bg-black/5 rounded hover:dark:bg-white/5"
+          : "hover:bg-black/5 rounded hover:dark:bg-white/5"
       }`}
     >
       <div className="transform-gpu flex items-center gap-5">
@@ -98,25 +98,17 @@ export default function Sidebar({ open, onClose }: props) {
 </div> 
     <h2 className=" py-5 px-2 pb-8 dark:text-color-font-principal text-color-black text-base font-semibold">Social</h2>
     <div className=" pb-1">
-    <a href="https://github.com/Joao4ugusto" className=" flex items-center gap-5  px-2 py-3 dark:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded-lg">
+    <a href="https://github.com/Joao4ugusto" className=" flex items-center gap-5  px-2 py-3  hover:bg-black/5 rounded hover:dark:bg-white/5">
     <GitHubLogoIcon width={18} className=' text-black dark:text-white' />
     <div>
           <p className="text-black dark:text-white">Github</p>
     </div>
     </a>
-    <a href='https://twitter.com/Joao4ugusto' className="flex items-center gap-5 px-2 py-3 dark:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40  hover:rounded-lg">
+    <a href='https://twitter.com/Joao4ugusto' className="flex items-center gap-5 px-2 py-3 hover:bg-black/5 rounded hover:dark:bg-white/5">
     <TwitterLogoIcon width={18} className=' text-black dark:text-white' />
     <div>
         <p className="text-black dark:text-white">Twitter</p>
     </div>
-    </a>
-    <a href='https://twitter.com/Joao4ugusto' className=" cursor-pointer hidden sy:flex sy:p-3 dark:sy:hover:bg-gradient-to-r dark:from-green-200/20  dark:via-green-300/20  dark:to-blue-500/20  sy:hover:bg-gradient-to-r from-green-200/40 via-green-300/40 to-blue-500/40   hover:rounded-lg">
-      <div className="transform-gpu flex items-center gap-5">
-        <TwitterLogoIcon width={18} className=' text-black dark:text-white' />
-        <div>
-        <p className="text-black dark:text-white">Twitter</p>
-    </div>
-      </div>
     </a>
     </div>
       </div>
